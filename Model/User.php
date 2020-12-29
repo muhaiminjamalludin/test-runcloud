@@ -37,6 +37,8 @@ class User
                 echo "\n";
                 print_r(($this->connectedServer)[0]->name);
                 echo "\n";
+                print_r(($this->connectedServer)[0]->ipAddress);
+                echo "\n";
             } else {
                 echo "User Exceeded Number of Allowed for Basic Plan\n";
             }
@@ -47,6 +49,8 @@ class User
             print_r(($this->currentPlan)->name);
             echo "\n";
             print_r(($this->connectedServer)[0]->name);
+            echo "\n";
+            print_r(($this->connectedServer)[0]->ipAddress);
             echo "\n";
         } else {
             echo "You are not subscribed to any plan";
