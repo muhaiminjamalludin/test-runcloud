@@ -52,8 +52,12 @@ class User
             echo "\n";
             print_r(($this->connectedServer)[0]->ipAddress);
             echo "\n";
+            print_r(($this->connectedServer)[1]->name);
+            echo "\n";
+            print_r(($this->connectedServer)[1]->ipAddress);
+            echo "\n";
         } else {
-            echo "You are not subscribed to any plan";
+            echo "You are not subscribed to any plan\n";
         }
     }
 
